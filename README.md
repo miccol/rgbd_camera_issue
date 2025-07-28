@@ -9,9 +9,12 @@ This package provides a minimal, reproducible example to help investigate a susp
 When using the `rgbd_camera` plugin in Gazebo Harmonic, the `sensor_msgs/msg/CameraInfo` and `sensor_msgs/msg/PointCloud2` messages are published with the same frame ID (`rgbd_camera_link`), but they **do not align visually** in RViz:
 
 see:
-<img width="996" height="886" alt="Image" src="https://github.com/user-attachments/assets/3eebd632-e6c5-4283-a091-80908b48a865" />
-<img width="1840" height="1027" alt="Image" src="https://github.com/user-attachments/assets/42c8e654-719d-48f5-98ea-2ac27ec0f5ea" />
-<img width="892" height="567" alt="image" src="https://github.com/user-attachments/assets/aaebab58-0c5e-410b-b4ab-cb34ec175a8d" />
+<img src="https://github.com/user-attachments/assets/3eebd632-e6c5-4283-a091-80908b48a865" width="500" />
+
+<img src="https://github.com/user-attachments/assets/42c8e654-719d-48f5-98ea-2ac27ec0f5ea" width="920" />
+
+<img src="https://github.com/user-attachments/assets/aaebab58-0c5e-410b-b4ab-cb34ec175a8d" width="450" />
+
 
 This misalignment suggests that the **camera intrinsic parameters** or the **depth projection matrix** used for generating the point cloud is not consistent with the `camera_info` message.
 
